@@ -1,4 +1,9 @@
 .base-anchor {
   color: var(--main-button);
   font-size: var(--main-paragraph);
+  transition: var(--main-transition);
+}
+
+.base-anchor:hover {
+  transform: translateY(-4px);
 }
