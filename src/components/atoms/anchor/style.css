@@ -1,3 +1,4 @@
-.anchor {
+.base-anchor {
   color: var(--main-button);
+  font-size: var(--main-paragraph);
 }

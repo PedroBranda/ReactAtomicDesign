@@ -1,17 +1,18 @@
-.button {
+.base-button {
   cursor: pointer;
   background-color: var(--main-bg);
   color: var(--main-button);
-  border: 1px solid var(--main-button);
-  border-radius: 4px;
-  padding: 12px;
-  transition: all 0.25s ease-in-out;
+  border: var(--main-border) var(--main-button);
+  border-radius: var(--main-border-radius);
+  padding: var(--main-padding);
+  transition: var(--main-transition);
+  font-size: var(--main-button-text);
 }
 
-.button:hover {
+.base-button:hover {
   background-color: var(--main-button);
   color: var(--main-bg);
-  border: 1px solid var(--main-bg);
-  border-radius: 4px;
-  padding: 12px;
+  border: var(--main-border) var(--main-bg);
+  border-radius: var(--main-border-radius);
+  padding: var(--main-padding);
 }

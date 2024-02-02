@@ -1,0 +1,9 @@
+.about-title {
+  font-size: var(--main-title);
+  font-weight: bold;
+  margin: unset;
+}
+
+.about-description {
+  font-size: var(--main-paragraph);
+}

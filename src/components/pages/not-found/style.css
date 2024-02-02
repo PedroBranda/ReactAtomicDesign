@@ -1,0 +1,5 @@
+.not-found-warning {
+  font-size: var(--main-title);
+  font-weight: bold;
+  margin: unset;
+}

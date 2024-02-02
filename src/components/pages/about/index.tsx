@@ -1,6 +1,5 @@
 import { Helmet } from "react-helmet";
 import { useNavigate } from "react-router-dom";
-import { CustomStyles } from "../../../types/common";
 import Button from "../../atoms/button";
 import Typograph from "../../atoms/typograph";
 import Body from "../../templates/body";
@@ -17,10 +16,10 @@ function About() {
       </Helmet>
       <Container>
         <Body>
-          <Typograph style={style.title}>
+          <Typograph className="about-title">
             Example of React Atomic Design
           </Typograph>
-          <Typograph style={style.description}>
+          <Typograph className="about-description">
             This project was built to learn the basics of react atomic design.
           </Typograph>
           <Button onClick={() => navigate(-1)}>Go back</Button>
@@ -29,16 +28,5 @@ function About() {
     </>
   );
 }
-
-const style: CustomStyles = {
-  title: {
-    fontSize: 64,
-    fontWeight: "bold",
-    margin: "unset",
-  },
-  description: {
-    fontSize: 26,
-  },
-};
 
 export default About;

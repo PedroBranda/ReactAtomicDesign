@@ -1,4 +1,12 @@
 :root {
   --main-bg: #282c34;
   --main-button: #61dafb;
+  --main-button-text: 18px;
+  --main-padding: 12px;
+  --main-margin: 12px;
+  --main-title: 48px;
+  --main-paragraph: 24px;
+  --main-border: 1px solid;
+  --main-border-radius: 4px;
+  --main-transition: all 0.25s ease-in-out;
 }

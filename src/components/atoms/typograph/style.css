@@ -1,0 +1,4 @@
+.base-typograph {
+  font-size: var(--main-paragraph);
+  color: white;
+}

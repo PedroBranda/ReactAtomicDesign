@@ -1,6 +1,5 @@
 import { Helmet } from "react-helmet";
 import { useLocation, useNavigate } from "react-router-dom";
-import { CustomStyles } from "../../../types/common";
 import Button from "../../atoms/button";
 import Typograph from "../../atoms/typograph";
 import Body from "../../templates/body";
@@ -18,7 +17,7 @@ function NotFound() {
       </Helmet>
       <Container>
         <Body>
-          <Typograph style={style.warning}>Error 404</Typograph>
+          <Typograph className="not-found-warning">Error 404</Typograph>
           <Typograph>{`Page: ${pathname} was not found`}</Typograph>
           <Button onClick={() => navigate(-1)}>Go back</Button>
         </Body>
@@ -26,13 +25,5 @@ function NotFound() {
     </>
   );
 }
-
-const style: CustomStyles = {
-  warning: {
-    fontSize: 64,
-    fontWeight: "bold",
-    margin: "unset",
-  },
-};
 
 export default NotFound;

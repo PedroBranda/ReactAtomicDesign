@@ -4,6 +4,7 @@ import Logo from "../../atoms/logo";
 import Typograph from "../../atoms/typograph";
 import Body from "../../templates/body";
 import Container from "../../templates/container";
+import "./style.css";
 
 function Home() {
   return (
@@ -14,7 +15,7 @@ function Home() {
       <Container>
         <Body>
           <Logo width={200} />
-          <Typograph>Example of React Atomic Design</Typograph>
+          <Typograph className="home-title">It's a training project!</Typograph>
           <Anchor href="/about" target="_self" rel="noopener noreferrer">
             See more about
           </Anchor>

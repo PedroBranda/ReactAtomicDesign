@@ -2,13 +2,18 @@ import "./style.css";
 
 interface Props {
   children: string;
+  className?: string;
   style?: React.CSSProperties;
   onClick?: () => void;
 }
 
-function Button({ children, onClick, style }: Props) {
+function Button({ children, className, style, onClick }: Props) {
   return (
-    <button className="button" style={style} onClick={onClick}>
+    <button
+      className={["base-button", className].join(" ")}
+      style={style}
+      onClick={onClick}
+    >
       {children}
     </button>
   );

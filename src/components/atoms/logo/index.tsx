@@ -2,20 +2,23 @@ import logo from "../../../imgs/logo.svg";
 import "./style.css";
 
 interface Props {
+  className?: string;
+  style?: React.CSSProperties;
   width?: number;
   height?: number;
-  style?: React.CSSProperties;
 }
 
-export default function Logo({ width, height, style }: Props) {
+function Logo({ className, style, width, height }: Props) {
   return (
     <img
-      src={logo}
-      className="logo"
       style={style}
+      className={["base-logo", className].join(" ")}
+      src={logo}
       alt="logo"
       width={width}
       height={height}
     />
   );
 }
+
+export default Logo;
